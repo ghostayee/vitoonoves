@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT European Project - EUWEB Presidio Platform</title>
+    <meta name="description"
+        content="Comprehensive European JWT authentication platform with intellectual property management, sustainable development goals integration, and multi-domain digital transformation from .IT to .EU">
+    <meta name="author" content="JWT European Project Team">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Rotating Banner -->
+    <div class="rotating-banner">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-entity" id="bannerEntity">
+                    <div class="entity-badge">
+                        <span class="entity-name" id="entityName">WIPO/UN</span>
+                    </div>
+                    <div>
+                        <div id="entityFullName">World Intellectual Property Organization</div>
+                        <div style="font-size: 0.75rem; opacity: 0.9;" id="entityDetails">Global IP leadership • Global
+                        </div>
+                    </div>
+                </div>
+                <button class="cart-btn">
+                    <span class="icon icon-cart"></span>
+                    Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-header">
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <span class="icon icon-shield"></span>
+                    </div>
+                    <div>
+                        <h1 style="font-size: 1.25rem; font-weight: 800; color: var(--jwt-blue);">JWT European Project
+                        </h1>
+                        <p style="font-size: 0.875rem; color: var(--jwt-gray);">jwt-jwt.eu</p>
+                    </div>
+                </div>
+
+                <div class="nav-menu">
+                    <button class="nav-btn active" onclick="toggleMenu('jwt')">JWT ▼</button>
+                    <button class="nav-btn" onclick="toggleMenu('pcrr')">PCRR ▼</button>
+                    <button class="nav-btn" onclick="toggleMenu('ip')">IP ▼</button>
+                    <button class="nav-btn" onclick="toggleMenu('expotv1')">ExpoTV1 ▼</button>
+                </div>
+            </div>
+
+            <!-- JWT Dropdown Menu -->
+            <div class="dropdown-menu show" id="jwt-menu">
+                <div class="container">
+                    <div class="dropdown-grid">
+                        <div class="menu-item" onclick="openLink('/jwt')">
+                            <div class="menu-item-content">
+                                <div class="menu-icon"><span class="icon icon-shield"></span></div>
+                                <div>
+                                    <h3 style="font-size: 0.875rem; font-weight: 600;">JWT / Home</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" onclick="openLink('https://www.aias-sicurezza.it/presentazione-aias/')">
+                            <div class="menu-item-content">
+                                <div class="menu-icon"><span class="icon icon-shield"></span></div>
+                                <div>
+                                    <h3 style="font-size: 0.875rem; font-weight: 600;">JWT Safety</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item"
+                            onclick="openLink('https://www.aias-sicurezza.it/privacy-data-protection-cybersecurity/')">
+                            <div class="menu-item-content">
+                                <div class="menu-icon"><span class="icon icon-shield"></span></div>
+                                <div>
+                                    <h3 style="font-size: 0.875rem; font-weight: 600;">JWT Security</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" onclick="openLink('/comm/dream.zone')">
+                            <div class="menu-item-content">
+                                <div class="menu-icon"><span class="icon icon-globe"></span></div>
+                                <div>
+                                    <h3 style="font-size: 0.875rem; font-weight: 600;">Country Dream.ZONE</h3>
+                                    <span
+                                        style="font-size: 0.75rem; background: rgba(16, 185, 129, 0.1); color: #10b981; padding: 0.125rem 0.5rem; border-radius: 9999px;">Form
+                                        Available</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other dropdown menus (hidden by default) -->
+            <div class="dropdown-menu" id="pcrr-menu">
+                <div class="container">
+                    <div class="dropdown-grid">
+                        <div class="menu-item" onclick="openLink('/comm/nft')">
+                            <div class="menu-item-content">
+                                <div class="menu-icon">📄</div>
+                                <div>
+                                    <h3 style="font-size: 0.875rem; font-weight: 600;">PCRR</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" onclick="openLink('http://www.expotv1.com/JWT_NFW-BB.htm')">
+                            <div class="menu-item-content">
+                                <div class="menu-icon">💡</div>
+                                <div>
+                                    <h3 style="font-size: 0.875rem; font-weight: 600;">NFT/NFW</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown-menu" id="ip-menu">
+                <div class="container">
+                    <div class="dropdown-grid">
+                        <div class="menu-item" onclick="openLink('/comm/ip')">
+                            <div class="menu-item-content">
+                                <div class="menu-icon">💡</div>
+                                <div>
+                                    <h3 style="font-size: 0.875rem; font-weight: 600;">IP - Intellectual Property</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" onclick="openLink('/iteg')">
+                            <div class="menu-item-content">
+                                <div class="menu-icon">⚙️</div>
+                                <div>
+                                    <h3 style="font-size: 0.875rem; font-weight: 600;">ITEG - Rotor</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown-menu" id="expotv1-menu">
+                <div class="container">
+                    <div class="dropdown-grid">
+                        <div class="menu-item" onclick="openLink('/comm')">
+                            <div class="menu-item-content">
+                                <div class="menu-icon">📺</div>
+                                <div>
+                                    <h3 style="font-size: 0.875rem; font-weight: 600;">ExpoTV1 - Media&TV</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item" onclick="openLink('https://www.expotv1.com/ESCP_TSMGO.htm')">
+                            <div class="menu-item-content">
+                                <div class="menu-icon">⚙️</div>
+                                <div>
+                                    <h3 style="font-size: 0.875rem; font-weight: 600;">IT&C Support Group</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="icon icon-globe"></span>
+                        EUWEB Presidio - JWT Technology Migration
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span
+                            style="background: linear-gradient(to right, white, var(--jwt-gold)); -web-background: text; -webkit-text-fill-color: transparent;">European</span><br>
+                        JWT Platform
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Comprehensive digital transformation from .IT to .EU domains with advanced JWT authentication,
+                        intellectual property management, and sustainable development goals integration.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="btn-primary">
+                            Access Platform →
+                        </button>
+                        <button class="btn-outline">
+                            Explore IP Portfolio
+                        </button>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">10</div>
+                            <div class="stat-label">Active Tasks</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">110</div>
+                            <div class="stat-label">Landing Pages</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-label">IP Domains</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-features">
+                    <div class="feature-card">
+                        <div class="feature-content">
+                            <div class="feature-icon"></div>
+                            <div>
+                                <h3 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem;">JWT Security
+                                </h3>
+                                <p style="opacity: 0.8;">Advanced authentication and data protection protocols for
+                                    European compliance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-content">
+                            <div class="feature-icon"></div>
+                            <div>
+                                <h3 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem;">IP Portfolio
+                                </h3>
+                                <p style="opacity: 0.8;">Comprehensive intellectual property management across multiple
+                                    jurisdictions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-content">
+                            <div class="feature-icon"></div>
+                            <div>
+                                <h3 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem;">SDG
+                                    Integration</h3>
+                                <p style="opacity: 0.8;">Aligned with UN Sustainable Development Goals and ESG
+                                    frameworks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presentation Space -->
+    <section class="presentation-space">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Platform Overview</h2>
+                <p class="section-subtitle">
+                    Explore our comprehensive European JWT platform with integrated authentication,
+                    intellectual property management, and sustainable development initiatives.
+                </p>
+            </div>
+
+            <div class="presentation-categories">
+                <!-- Core Platform -->
+                <div class="category-section">
+                    <h3 class="category-title">Core Platform</h3>
+                    <div class="items-grid">
+                        <div class="presentation-item" onclick="showDetails('jwt-home')">
+                            <div class="item-header">
+
+                                <div class="item-badges">
+                                    <span>→</span>
+                                </div>
+                            </div>
+                            <h4 class="item-title">JWT Authentication System</h4>
+                            <p class="item-summary">Advanced security framework for European digital transformation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Safety & Compliance -->
+                <div class="category-section">
+                    <h3 class="category-title">Safety & Compliance</h3>
+                    <div class="items-grid">
+                        <div class="presentation-item" onclick="showDetails('safety')">
+                            <div class="item-header">
+
+                                <div class="item-badges"><span>→</span></div>
+                            </div>
+                            <h4 class="item-title">JWT Safety Protocols</h4>
+                            <p class="item-summary">Industrial safety standards and compliance frameworks</p>
+                        </div>
+
+                        <div class="presentation-item" onclick="showDetails('security')">
+                            <div class="item-header">
+
+                                <div class="item-badges"><span>→</span></div>
+                            </div>
+                            <h4 class="item-title">Data Protection & Cybersecurity</h4>
+                            <p class="item-summary">GDPR-compliant data protection and cybersecurity measures</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regional Development -->
+                <div class="category-section">
+                    <h3 class="category-title">Regional Development</h3>
+                    <div class="items-grid">
+                        <div class="presentation-item" onclick="showDetails('dream-zone')">
+                            <div class="item-header">
+
+                                <div class="item-badges">
+                                    <div class="form-badge"></div>
+                                    <span>→</span>
+                                </div>
+                            </div>
+                            <h4 class="item-title">Country Dream.ZONE</h4>
+                            <p class="item-summary">Regional development and opportunity mapping</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Management -->
+                <div class="category-section">
+                    <h3 class="category-title">User Management</h3>
+                    <div class="items-grid">
+                        <div class="presentation-item" onclick="showDetails('kyc-light')">
+                            <div class="item-header">
+
+                                <div class="item-badges">
+                                    <div class="form-badge"></div>
+                                    <span>→</span>
+                                </div>
+                            </div>
+                            <h4 class="item-title">KYC Light Verification</h4>
+                            <p class="item-summary">Streamlined identity verification for standard operations</p>
+                        </div>
+
+                        <div class="presentation-item" onclick="showDetails('kyc-strong')">
+                            <div class="item-header">
+
+                                <div class="item-badges">
+                                    <div class="form-badge"></div>
+                                    <span>→</span>
+                                </div>
+                            </div>
+                            <h4 class="item-title">KYC Strong Verification</h4>
+                            <p class="item-summary">Enhanced identity verification for premium services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JWT European Project</h3>
+                    <p>Digital transformation platform for European JWT authentication and intellectual property
+                        management.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@jwt-jwt.eu<br>Platform: jwt-jwt.eu<br>Target Launch: April 30th</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Compliance</h4>
+                    <p>GDPR Compliant • EU Standards<br>JWT Authentication • SSL Secured<br>ISO 27001 Framework</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 JWT European Project. All rights reserved.</p>
+                <p>Powered by EUWEB Presidio Platform</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Banner rotation functionality
+        const bannerEntities = [
+            { name: "World Intellectual Property Organization", acronym: "WIPO/UN", description: "Global IP leadership", region: "Global" },
+            { name: "European Patent Office", acronym: "EPO/EU", description: "European patent system", region: "Europe" },
+            { name: "Ufficio Italiano Brevetti e Marchi", acronym: "UIBM/IT", description: "Italian IP office", region: "Italy" },
+            { name: "China National Intellectual Property Administration", acronym: "CNIPA/CN", description: "Chinese IP authority", region: "China" },
+            { name: "Intellectual Property India", acronym: "InPASS/IN", description: "Indian IP system", region: "India" },
+            { name: "Eurasian Patent Organization", acronym: "EAPO/RU", description: "Eurasian patents", region: "Eurasia" },
+            { name: "Sustainable Development Goals", acronym: "SDGs/UN", description: "UN sustainability framework", region: "Global" },
+            { name: "Environmental Social Governance", acronym: "ESG/UN", description: "Corporate responsibility", region: "Global" }
+        ];
+
+        let currentBannerIndex = 0;
+        let bannerInterval;
+
+        function updateBanner() {
+            const entity = bannerEntities[currentBannerIndex];
+            document.getElementById('entityName').textContent = entity.acronym;
+            document.getElementById('entityFullName').textContent = entity.name;
+            document.getElementById('entityDetails').textContent = entity.description + ' • ' + entity.region;
+            currentBannerIndex = (currentBannerIndex + 1) % bannerEntities.length;
+        }
+
+        function startBannerRotation() {
+            bannerInterval = setInterval(updateBanner, 4000);
+        }
+
+        function stopBannerRotation() {
+            clearInterval(bannerInterval);
+        }
+
+        // Navigation functionality
+        let currentMenu = 'jwt';
+
+        function toggleMenu(menuId) {
+            // Hide all menus
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                menu.classList.remove('show');
+            });
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected menu and activate button
+            if (currentMenu !== menuId) {
+                document.getElementById(menuId + '-menu').classList.add('show');
+                event.target.classList.add('active');
+                currentMenu = menuId;
+            } else {
+                currentMenu = null;
+            }
+        }
+
+        function openLink(url) {
+            if (url.startsWith('http')) {
+                window.open(url, '_blank');
+            } else {
+                // For internal links, you would navigate to the page
+                console.log('Navigate to:', url);
+                alert('Navigation to: ' + url + '\n\nThis would redirect to the appropriate JWT platform section.');
+            }
+        }
+
+        function showDetails(itemId) {
+            const details = {
+                'jwt-home': {
+                    title: 'JWT Authentication System',
+                    description: 'Comprehensive JWT-based authentication system designed for European compliance and cross-border integration. Features include multi-domain support, GDPR compliance, and advanced security protocols.'
+                },
+                'safety': {
+                    title: 'JWT Safety Protocols',
+                    description: 'Complete safety management system aligned with European industrial standards. Includes risk assessment, compliance tracking, and safety protocol implementation.'
+                },
+                'security': {
+                    title: 'Data Protection & Cybersecurity',
+                    description: 'Advanced cybersecurity framework with GDPR compliance, data encryption, and privacy protection protocols for European operations.'
+                },
+                'dream-zone': {
+                    title: 'Country Dream.ZONE',
+                    description: 'Interactive platform for exploring regional opportunities, development zones, and investment possibilities across European territories.'
+                },
+                'kyc-light': {
+                    title: 'KYC Light Verification',
+                    description: 'Simplified Know Your Customer process for basic platform access and standard operational requirements.'
+                },
+                'kyc-strong': {
+                    title: 'KYC Strong Verification',
+                    description: 'Comprehensive identity verification process for access to advanced features, financial services, and sensitive operations.'
+                }
+            };
+
+            const item = details[itemId];
+            if (item) {
+                alert(item.title + '\n\n' + item.description + '\n\nThis would open the detailed view for this section.');
+            }
+        }
+
+        // Initialize banner rotation on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            updateBanner();
+            startBannerRotation();
+
+            // Pause rotation on hover
+            document.getElementById('bannerEntity').addEventListener('mouseenter', stopBannerRotation);
+            document.getElementById('bannerEntity').addEventListener('mouseleave', startBannerRotation);
+        });
+
+        // Smooth scrolling for internal links
+        document.addEventListener('click', function (e) {
+            if (e.target.tagName === 'A' && e.target.getAttribute('href').startsWith('#')) {
+                e.preventDefault();
+                const target = document.querySelector(e.target.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
